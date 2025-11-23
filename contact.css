@@ -1,0 +1,14 @@
+.outer-body{
+    text-align: center;
+    border: solid 2px black;
+    height: 80vh;
+    padding: 20px;
+}
+
+
+.my-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
