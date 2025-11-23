@@ -12,13 +12,13 @@ class A{
         this.email = email;
         this.number = number;
     }
+
+
+init() {
+document.getElementById(this.myForm).addEventListener('submit',(e) => this.handleSubmit(e));
 }
 
-init=() => {
-document.getElementById(this.myForm).addEventListener('submit',this.handleSubmit);
-}
-
-const handleSubmit = (e) => {
+handleSubmit (e){
     e.preventDefault();
     let name = document.getElementById(this.name).value;
     let email = document.getElementById(this.email).value;
@@ -33,7 +33,9 @@ const handleSubmit = (e) => {
         alert("Error: Fill all fields");
         return
     }
+
     document.getElementById(this.myForm).submit();
+}
 }
 
 
